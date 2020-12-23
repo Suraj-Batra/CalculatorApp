@@ -2,36 +2,26 @@
 <html>
     <head>
         <meta charset="utf-8">
-        
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <meta name="color-scheme" content="light dark">
         <link rel="stylesheet" href="css/index.css">
         <title>Calculator</title>
     </head>
     <body>
-        <h1>Add any two Numbers</h1>
+       <div> 
+        <h1>My Calculator</h1>
         Enter First Number : <br>
-        <input type="number" id="t1" name="TextBox1">
+        <input type="number" id="firstNumber" placeholder="Enter First Number">
         <br>
         Enter Second Number : <br>
-        <input type="number" id="t2" name="TextBox2">
+        <input type="number" id="SecondNumber" placeholder="Enter Second Number">
         <br>
-       <input type="button" name="clickbutton" value="Display Result" onclick="addNumber()">
+       <button id="addbutton">Add</button>
        <br>
-       <br>
-      Result : <br>
-       <input type="number" id="result2" name="TextBox3">
-   
-<script type="text/javascript">
- document.addEventListener('deviceready', addNumber, false);
- function addNumber(){
- var firstNumber = parseInt(document.getElementById("t1").value);
- var secondNumber = parseInt(document.getElementById("t2").value);
- var result = firstNumber + secondNumber;
-
-document.getElementById("result2").value = result;
-}
-</script>
-    <script src="cordova.js"></script>
-    </body>
-</html>
+<!--      Result : <br>     -->
+       <p id="addresult"></p>
+          </div>
+<script src="cordova.js"></script>
+<script src="js/index.js"></script>
+      </body>
+         </html>
